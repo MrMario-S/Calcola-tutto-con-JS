@@ -80,7 +80,7 @@ margin-bottom: auto;
   margin: auto;
   font-style: oblique;
  }
- input:focus{
+ input:focus, select:hover{
   background-color: #00001C;
   padding: .6vw;
   border-radius: 1.3vh;
@@ -107,4 +107,14 @@ margin-bottom: auto;
  border-radius: 1.6vh;
  box-shadow: rgba(0, 0, 0, .2) 0 1.5vw 1vw;
  padding: .7vw .7vw .8vw .7vw;
+}
+select{
+  background-color: white;
+  border-radius: 2vw;
+  color: #00001C;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2vh;
+  margin: auto;
+  transition: .3s;
 }
