@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Math and Geometry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href="styling.css">
+    <script src="myscripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block">
+            <img src="https://i.ytimg.com/vi/Z-ZkmpQBIFo/maxresdefault.jpg"> 
+            <h2>Equazioni  &nbsp; <i class="fa-solid fa-not-equal"></i></h2>
+            <p>Risolvi le equzioni a 1 incognita</p>
+            <input type="text" id="Textbox" placeholder="inserisci qui l'eqazione:" class="toggle-element" id="equationInput">
+            <button onclick="storeInput()" id="button-inline" class="toggle-element" ></button>
+            <p id="storedValue" class="toggle-element"></p>
+            <button id="2" onclick="myFunction(2)"></button>
+        </div>
+        <div class="block">
+            <img src="https://i.ytimg.com/vi/UCpfhl0avTg/maxresdefault.jpg">
+            <h2>Converti Unità  &nbsp; <i class="fa-solid fa-calculator"></i></h2>
+            <p>Da km a m, kg a g, e ogni altra misura</p>
+            <button id="3" onclick="myFunction(3)"></button> 
+        </div>
+        <div class="block">
+            <img src="https://doodlelearning.com/wp-content/uploads/2023/11/HowtoMeasureArea-H2-WhatisTheFormulaforArea@3x-1024x890.png">
+            <h2>Calcola Area  &nbsp; <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-square"></i> </h2> 
+            <p>Tutte le principali forme geometriche</p>
+            <button id="4" onclick="myFunction(4)"></button>
+        </div>
+    </div>
+    <h1 class="centerh1">Chi e con quali linguaggi <i class="fa-solid fa-down-long"></i></h1>
+    <div class="container">
+        <div class="block">
+            <img src="https://yt3.googleusercontent.com/9yVIbBMyc3X66I7ezhb9Oyw_N8_jdGo_mwq32h0hKJn5ht_hTI70EWmafri5DHpnOVa_vvm2z5M=s900-c-k-c0x00ffffff-no-rj">
+            <h2>Mario Fonderico  &nbsp; <i class="fa-solid fa-user"></i></h2>
+            <p>Studente Nino Cortese/Front-end Developer</p>
+            <button id="5" onclick="myFunction(5)"></button> 
+        </div>
+        <div class="block">
+            <img src="https://miro.medium.com/v2/resize:fit:1153/1*UM3e_ddr96VzJQjVlgXOKQ.png">
+            <h2>HTML + CSS + JS  &nbsp; <i class="fa-solid fa-terminal"></i></h2>
+            <p>Le lingue di programmazione che ho usato per il front-end</p>
+            <button id="1" onclick="myFunction(1)"></button> 
+        </div>
+    </div>
