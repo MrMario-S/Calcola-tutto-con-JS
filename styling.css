@@ -79,17 +79,18 @@ margin-bottom: auto;
   height: 10%;
   margin: auto;
   margin-top: 0;
+  font-style: oblique;
  }
  input:focus{
-  background-color: black;
+  background-color: #00001C;
+  padding: .6vw;
   border-radius: 1.3vh;
   scale: 1.35;
   color: white;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: bolder;
   font-size: 2vh;
   margin-bottom: 2vh;
-  box-shadow:rgba(255, 0, 0, 0.904) 0px 5px 10px;
+  box-shadow:#00001C 0px 3vw 5vw;
  }
 .toggle-element {
   display: none; /* Initially hidden */
@@ -102,7 +103,8 @@ margin-bottom: auto;
 }
 #storedValue{
  width: fit-content;
- border-radius: 3vh;
- box-shadow: rgba(0, 0, 0, .3) 0 0px 10px;;
+ font-size: 3vh;
+ border-radius: 1.6vh;
+ box-shadow: rgba(0, 0, 0, .2) 0 1.5vw 1vw;
  padding: .7vw .7vw .8vw .7vw;
 }
