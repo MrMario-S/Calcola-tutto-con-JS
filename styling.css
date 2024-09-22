@@ -78,7 +78,6 @@ margin-bottom: auto;
   width: 60%;
   height: 10%;
   margin: auto;
-  margin-top: 0;
   font-style: oblique;
  }
  input:focus{
@@ -97,7 +96,8 @@ margin-bottom: auto;
 }
 #button-inline{
   margin: auto;
-  width: 3vh;
+  margin-top: 2vh;
+  width: 6vw;
   height: 3vh;
   border-radius: 2vh;
 }
