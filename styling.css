@@ -50,9 +50,6 @@ overflow: hidden;
 margin-bottom: auto;
 transition: .2s;
 }
-p:hover , h2:hover{
-  color: #EB2D3A;
-}
 .block:hover , .block:active{
   flex: 2;
   box-shadow: rgba(255, 0, 0, 0.904) 0px 5px 100px;
@@ -86,6 +83,7 @@ p:hover , h2:hover{
   margin: auto;
   margin-top: .25vh;
   font-style: oblique;
+  font-size: 3vh;
  }
  input:focus, select:hover{
   background-color: #00001C;
@@ -94,7 +92,7 @@ p:hover , h2:hover{
   scale: 1.35;
   color: white;
   font-weight: bolder;
-  font-size: 2vh;
+  font-size: 4vh;
   margin-bottom: 2vh;
   box-shadow:#00001C 0px 3vw 5vw;
  }
