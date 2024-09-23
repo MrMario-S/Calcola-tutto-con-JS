@@ -130,3 +130,35 @@ window.onload = function() {
         document.getElementById('storedValue').innerText = storedSolution;
     }
 }
+function CalcolaArea(buttonArea){
+    const dropdown = document.getElementById("DropArea");
+    const resultArea = document.getElementById("resultArea")
+    const textbox1 = document.getElementById("textboxArea1")
+    const textbox2 = document.getElementById("textboxArea2")
+    let value = dropdown.value;
+    if (value == "rectangle"){
+        textbox2.style.display = "block"
+        resultArea.innerText = "a*b"
+        if(buttonArea.clicked != true & textbox1.value != null & textbox2.value != null){
+            resultArea.innerText = ("Area = "+textbox1.value * textbox2.value).toString()
+        }
+    }else if (value == "triangle"){
+        textbox2.style.display = "block"
+        resultArea.innerText = "base * altezza/2"
+        if(buttonArea.clicked != true & textbox1.value != null & textbox2.value != null){
+            resultArea.innerText = ("Area = "+textbox1.value * textbox2.value / 2).toString()
+        }
+    }else if(value == "cube"){
+        textbox2.style.display = "none"
+        resultArea.innerText = "l^3"
+        if(buttonArea.clicked != true & textbox1.value != null & textbox2.value != null){
+            resultArea.innerText = ("Area = "+textbox1.value**3).toString()
+        }
+    }else{
+        textbox2.style.display = "none"
+        resultArea.innerText = "l^2"
+        if(buttonArea.clicked != true & textbox1.value != null & textbox2.value != null){
+            resultArea.innerText = ("Area = "+textbox1.value**2).toString()
+        }
+    }
+}

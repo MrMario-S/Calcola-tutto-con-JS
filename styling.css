@@ -78,6 +78,7 @@ margin-bottom: auto;
   width: 60%;
   height: 10%;
   margin: auto;
+  margin-top: .25vh;
   font-style: oblique;
  }
  input:focus, select:hover{
@@ -107,6 +108,18 @@ margin-bottom: auto;
  border-radius: 1.6vh;
  box-shadow: rgba(0, 0, 0, .2) 0 1.5vw 1vw;
  padding: .7vw .7vw .8vw .7vw;
+ position: fixed;
+ top: 26vh;
+}
+#resultArea{
+  width: fit-content;
+  font-size: 3vh;
+  border-radius: 1.6vh;
+  box-shadow: rgba(0, 0, 0, .2) 0 1.5vw 1vw;
+  padding: .7vw .7vw 2vw .7vw;
+  position: fixed;
+  left: 50%;
+  top: 8vh;
 }
 select{
   background-color: white;

@@ -32,14 +32,16 @@
             <img src="https://doodlelearning.com/wp-content/uploads/2023/11/HowtoMeasureArea-H2-WhatisTheFormulaforArea@3x-1024x890.png">
             <h2>Calcola Area  &nbsp; <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-square"></i> </h2> 
             <p>Tutte le principali forme geometriche</p>
-            <select id="Drop" class="toggle-element">
+            <select onchange="CalcolaArea()" id="DropArea" class="toggle-element">
                 <option value="cube">cubo</option>
                 <option value="triangle">triangolo</option>
                 <option value="square">quadrato</option>
                 <option value="rectangle">rettangolo</option>
             </select>
-            <input type="text" id="Textbox" placeholder="inserisci qui i dati:" class="toggle-element">
-            <button onclick="" id="button-inline" class="toggle-element" ></button>
+            <input type="text" id="textboxArea1" placeholder="inserisci qui i dati:(a =; b =)" class="toggle-element">
+            <input type="text" id="textboxArea2" placeholder="inserisci qui i dati:(a =; b =)" class="toggle-element">
+            <button onclick="CalcolaArea(this)" id="button-inline" class="toggle-element" ></button>
+            <p id="resultArea" class="toggle-element"></p>
             <button id="4" onclick="myFunction(4)"></button>
         </div>
     </div>
