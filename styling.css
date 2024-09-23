@@ -29,6 +29,7 @@ h2{
   font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
   font-weight: bold;
   margin-left: 5%;
+  transition: .2s;
 }
 .centerh1{
   font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
@@ -47,6 +48,10 @@ p{
 white-space: normal;
 overflow: hidden;
 margin-bottom: auto;
+transition: .2s;
+}
+p:hover , h2:hover{
+  color: #EB2D3A;
 }
 .block:hover , .block:active{
   flex: 2;
@@ -56,8 +61,8 @@ margin-bottom: auto;
   max-width: 600px;
 }
  button{
- width: 2vh;
- height: 2vh;
+ width: 2.2vh;
+ aspect-ratio: 1;
  box-shadow: rgba(0, 0, 0, .3) 0 0px 10px;
  display: flex;
  background-color: transparent;
@@ -70,6 +75,7 @@ margin-bottom: auto;
  button:hover{
   box-shadow: rgba(0, 0, 0, 0.904) 0px 5px 10px;
   background-color: black;
+  width: 3vh;
  }
  input{
   display: flex;
@@ -113,6 +119,7 @@ margin-bottom: auto;
 }
 #resultArea{
   width: fit-content;
+  height: 2vh;
   font-size: 3vh;
   border-radius: 1.6vh;
   box-shadow: rgba(0, 0, 0, .2) 0 1.5vw 1vw;
