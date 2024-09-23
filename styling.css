@@ -8,7 +8,8 @@
 .block{
   display: flex;
   flex: 1 1 0;
-  height: 40vh;
+  min-height: 40vh;
+  max-height: fit-content;
   box-shadow: rgba(0, 0, 0, .3) 0 0px 10px;
   flex-direction: column;
   transition: ease-in-out .25s;
@@ -92,7 +93,7 @@ transition: .2s;
   scale: 1.35;
   color: white;
   font-weight: bolder;
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 2vh;
   box-shadow:#00001C 0px 3vw 5vw;
  }
@@ -114,6 +115,7 @@ transition: .2s;
  padding: .7vw .7vw .8vw .7vw;
  position: fixed;
  top: 26vh;
+ pointer-events: none;
 }
 #resultArea{
   width: fit-content;
@@ -125,6 +127,7 @@ transition: .2s;
   position: fixed;
   left: 50%;
   top: 8vh;
+  pointer-events: none;
 }
 select{
   background-color: white;
