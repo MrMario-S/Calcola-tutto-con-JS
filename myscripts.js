@@ -162,3 +162,34 @@ function CalcolaArea(buttonArea){
         }
     }
 }
+function convertUnits() {
+    // Get the input value and selected units
+    const inputValue = parseFloat(document.getElementById("inputValue").value);
+    const fromUnit = document.getElementById("fromUnit").value;
+    const toUnit = document.getElementById("toUnit").value;
+
+    // Initialize a variable for the converted value
+    let convertedValue;
+
+    // Conversion logic
+    if (fromUnit === "kg" && toUnit === "g") {
+        convertedValue = inputValue * 1000; // Kilograms to grams
+    } else if (fromUnit === "g" && toUnit === "kg") {
+        convertedValue = inputValue / 1000; // Grams to kilograms
+    } else if (fromUnit === "mt" && toUnit === "cm") {
+        convertedValue = inputValue * 100; // Meters to centimeters
+    } else if (fromUnit === "cm" && toUnit === "mt") {
+        convertedValue = inputValue / 100; // Centimeters to meters
+    } else if (fromUnit === "N" && toUnit === "g") {
+        convertedValue = inputValue / 9.81 * 1000; // Newtons to kilograms (assuming Earth's gravity)
+    } else if (fromUnit === "kg" && toUnit === "N") {
+        convertedValue = inputValue * 9.81; // Kilograms to newtons (assuming Earth's gravity)
+    } else if (fromUnit === toUnit) {
+        convertedValue = inputValue; // No conversion needed if units are the same
+    } else {
+        convertedValue = "Invalid conversion"; // Handle invalid conversions
+    }
+
+    // Display the result
+    document.getElementById("result").innerText = convertedValue
+} 

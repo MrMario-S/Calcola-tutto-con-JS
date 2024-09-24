@@ -26,6 +26,27 @@
             <img src="https://i.ytimg.com/vi/UCpfhl0avTg/maxresdefault.jpg">
             <h2>Converti Unità  &nbsp; <i class="fa-solid fa-calculator"></i></h2>
             <p>Da km a m, kg a g, e ogni altra misura</p>
+            <input type="number" id="inputValue" placeholder="Inserisci valore:" class="toggle-element">
+
+            <!-- First dropdown for choosing the input unit -->
+            <select id="fromUnit" class="toggle-element">
+                <option value="kg">Kilogrammi</option>
+                <option value="mt">Metri</option>
+                <option value="N">Newton</option>
+            </select>
+        
+            <!-- Second dropdown for choosing the target unit -->
+            <select id="toUnit" class="toggle-element">
+                <option value="g">Grammi</option>
+                <option value="cm">Centimetri</option>
+                <option value="N">Newton</option>
+            </select>
+        
+            <!-- Button to trigger the conversion -->
+            <button onclick="convertUnits()" class="toggle-element" id="button-inline"></button>
+        
+            <!-- Display the result -->
+            <p id="result" class="toggle-element"></p>
             <button id="3" onclick="myFunction(3)"></button> 
         </div>
         <div class="block">

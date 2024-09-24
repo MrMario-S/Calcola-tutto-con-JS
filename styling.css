@@ -13,17 +13,25 @@
   box-shadow: rgba(0, 0, 0, .3) 0 0px 10px;
   flex-direction: column;
   transition: ease-in-out .25s;
-  border-radius: 1.4vh;
+  border-radius: 2.7vh;
   max-width: 450px;
   margin: 10px;
   background-color: white;
   width: 66vw;
 }
+#star-container {
+  background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));
+  height: 100%;  
+  overflow: hidden;
+  position: relative;
+}
+
 img{
   width: 100%;
   height: 22vh;
   object-fit: cover;
-  border-radius: 1.4vh 1.4vh 0 0;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 h2{
  display: flex;
@@ -53,8 +61,8 @@ transition: .2s;
 }
 .block:hover , .block:active{
   flex: 2;
-  box-shadow: rgba(255, 0, 0, 0.904) 0px 5px 100px;
-  border-radius: 3vh;
+  box-shadow: #787ff6 .2vw 2vh 5vh;
+  border-radius: 2vh;
   margin: 8px;
   max-width: 600px;
 }
@@ -117,7 +125,7 @@ transition: .2s;
  top: 26vh;
  pointer-events: none;
 }
-#resultArea{
+#resultArea, #result{
   width: fit-content;
   height: 2vh;
   font-size: 3vh;
@@ -138,4 +146,14 @@ select{
   font-size: 2vh;
   margin: auto;
   transition: .3s;
+}
+#fromUnit{
+  position: fixed;
+  top: 76%;
+  left: 7%;
+}
+#toUnit{
+  position: fixed;
+  top: 76%;
+  right: 7%;
 }
